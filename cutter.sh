@@ -1,5 +1,5 @@
 inputFile=$1
-inputVideo=`basename "${inputFile}" .vcp`.avi
+inputVideo=$(head -n 1 "${inputFile}")
 counter=0
 outputDir="$2"
 mkdir -p "$outputDir"
